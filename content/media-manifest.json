@@ -1,0 +1,15 @@
+{
+  "engagement": [
+    { "source": "fav5.jpg", "role": "wide-sunset-marina" },
+    { "source": "fav10.jpg", "role": "intimate-ring-closeup" }
+  ],
+  "films": [
+    { "title": "Meet-Cute Ceremony Film", "role": "ceremony-origin-story", "source": "Wedding-Moving-Picture-08272016.mov" },
+    { "title": "Wedding Feature", "role": "photographer-wedding-retrospective", "source": "5.-IPPOLITE-Wedding-FEATURE.mov" },
+    { "title": "Ten-Year Anniversary", "role": "homepage-hero", "source": "Shirley-and-Cris-Anniversary.mp4" }
+  ],
+  "notes": [
+    "Archival masters remain outside Git.",
+    "Web derivatives, posters, captions, and final storage URLs will be added during the media phase."
+  ]
+}
