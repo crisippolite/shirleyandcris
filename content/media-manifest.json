@@ -9,7 +9,7 @@
   ],
   "films": [
     { "title": "Meet-Cute Ceremony Film", "role": "ceremony-origin-story", "source": "Wedding-Moving-Picture-08272016.mov", "transcript": "content/meet-cute-script.json", "poster": "public/media/video/meet-cute-poster.jpg" },
-    { "title": "Wedding Feature", "role": "photographer-wedding-retrospective", "source": "5.-IPPOLITE-Wedding-FEATURE.mov" },
+    { "title": "Wedding Feature", "role": "photographer-wedding-retrospective", "source": "5.-IPPOLITE-Wedding-FEATURE.mov", "poster": "public/media/photos/wedding-reflection.png" },
     { "title": "Ten-Year Anniversary", "role": "homepage-hero", "source": "Shirley-and-Cris-Anniversary.mp4" }
   ],
   "notes": [
