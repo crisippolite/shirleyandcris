@@ -5,7 +5,7 @@
     { "source": "fav10.jpg", "role": "intimate-ring-closeup" }
   ],
   "illustrations": [
-    { "source": "public/illustrations/lamby-character-sheet-v1.png", "role": "lamby-character-sheet", "status": "review" }
+    { "source": "public/illustrations/lamby-character-sheet-v1.png", "role": "lamby-character-sheet", "status": "approved" }
   ],
   "films": [
     { "title": "Meet-Cute Ceremony Film", "role": "ceremony-origin-story", "source": "Wedding-Moving-Picture-08272016.mov" },

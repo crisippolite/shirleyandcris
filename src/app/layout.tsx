@@ -27,6 +27,20 @@ export const metadata: Metadata = {
   },
   description:
     "A story that began on July 25, 1997, and keeps unfolding—one little date at a time.",
+  openGraph: {
+    title: "Shirley + Cris · Ten years, and every little date between",
+    description:
+      "A story that began on July 25, 1997, and keeps unfolding—one little date at a time.",
+    type: "website",
+    images: [{ url: "/media/share/shirley-cris-og.png", width: 1744, height: 911 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shirley + Cris · Ten years, and every little date between",
+    description:
+      "A story that began on July 25, 1997, and keeps unfolding—one little date at a time.",
+    images: ["/media/share/shirley-cris-og.png"],
+  },
   robots: {
     index: false,
     follow: false,
