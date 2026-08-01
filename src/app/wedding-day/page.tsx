@@ -167,6 +167,7 @@ export default function WeddingDayPage() {
         </div>
         <div className={styles.morningCollage}>
           <figure className={`${styles.photoFrame} ${styles.revealPhoto}`}>
+            <span className={`${styles.tape} ${styles.mintTape}`} aria-hidden="true" />
             <Image
               src="/media/photos/wedding-reveal.png"
               alt="Shirley reacting with joy while getting ready for the wedding"
@@ -176,6 +177,7 @@ export default function WeddingDayPage() {
             <figcaption>oh my goodness—it’s today!</figcaption>
           </figure>
           <figure className={`${styles.photoFrame} ${styles.beforePhoto}`}>
+            <span className={`${styles.tape} ${styles.pinkTape}`} aria-hidden="true" />
             <Image
               src="/media/photos/wedding-before-ceremony.jpg"
               alt="Cris with Uncle Ed and family before the ceremony"
@@ -184,14 +186,13 @@ export default function WeddingDayPage() {
             />
             <figcaption>Cris, Uncle Ed & family · before the vows</figcaption>
           </figure>
-          <span className={`${styles.tape} ${styles.mintTape}`} aria-hidden="true" />
-          <span className={`${styles.tape} ${styles.pinkTape}`} aria-hidden="true" />
         </div>
       </section>
 
       <section className={styles.ceremonySection} aria-labelledby="ceremony-title">
         <div className={styles.ceremonyPhoto}>
           <figure>
+            <span className={`${styles.tape} ${styles.blackTape}`} aria-hidden="true" />
             <Image
               src="/media/photos/wedding-vows.png"
               alt="Uncle Ed officiating while Shirley and Cris exchange vows"
@@ -199,7 +200,6 @@ export default function WeddingDayPage() {
               sizes="(max-width: 760px) 100vw, 58vw"
             />
           </figure>
-          <span className={`${styles.tape} ${styles.blackTape}`} aria-hidden="true" />
         </div>
         <div className={styles.ceremonyCopy}>
           <p className={styles.eyebrow}>2:00 PM · beneath the trees</p>
@@ -225,6 +225,7 @@ export default function WeddingDayPage() {
         </div>
         <div className={styles.lambyStage}>
           <figure className={styles.lambeauPhoto}>
+            <span className={`${styles.tape} ${styles.redDotTape}`} aria-hidden="true" />
             <Image
               src="/media/photos/wedding-lambeau-rings.jpg"
               alt="Lambeau in his wedding tuxedo lying on Shirley’s dress train with the ring pillow secured on his back"
@@ -250,7 +251,6 @@ export default function WeddingDayPage() {
             <span>OFFICIAL DUTIES</span>
             <strong>Ring bearer<br />Best boy<br />Scene stealer</strong>
           </div>
-          <span className={`${styles.tape} ${styles.redDotTape}`} aria-hidden="true" />
         </div>
       </section>
 
@@ -298,6 +298,7 @@ export default function WeddingDayPage() {
 
         <div className={styles.gallery}>
           <figure className={`${styles.galleryPhoto} ${styles.cityPhoto}`}>
+            <span className={`${styles.tape} ${styles.galleryTapeOne}`} aria-hidden="true" />
             <Image src="/media/photos/wedding-city.png" alt="Shirley and Cris standing together near South Second" fill sizes="(max-width: 760px) 88vw, 39vw" />
             <figcaption>between the ceremony and the party</figcaption>
           </figure>
@@ -310,11 +311,10 @@ export default function WeddingDayPage() {
             <figcaption>this face, forever</figcaption>
           </figure>
           <figure className={`${styles.galleryPhoto} ${styles.caricaturePhoto}`}>
+            <span className={`${styles.tape} ${styles.galleryTapeTwo}`} aria-hidden="true" />
             <Image src="/media/photos/wedding-caricature.png" alt="Shirley and Cris posing beside their wedding caricature" fill sizes="(max-width: 760px) 62vw, 24vw" />
             <figcaption>plus Lamby, obviously</figcaption>
           </figure>
-          <span className={`${styles.tape} ${styles.galleryTapeOne}`} aria-hidden="true" />
-          <span className={`${styles.tape} ${styles.galleryTapeTwo}`} aria-hidden="true" />
         </div>
 
         <section className={styles.speechFeature} aria-labelledby="cole-speech-title">

@@ -164,8 +164,8 @@ export default function HomePage() {
         </div>
 
         <div className={styles.heroAlbum}>
-          <div className={`${styles.tape} ${styles.tapePink}`} aria-hidden="true" />
           <figure className={styles.heroPhoto}>
+            <div className={`${styles.tape} ${styles.tapePink}`} aria-hidden="true" />
             <Image
               src="/media/photos/engagement-sunset.jpg"
               alt="Shirley and Cris sitting together at the marina at sunset"

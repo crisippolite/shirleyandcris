@@ -90,6 +90,7 @@ export default function OurStoryPage() {
 
         <div className={styles.heroAlbum}>
           <figure className={styles.heroPhoto}>
+            <span className={`${styles.tape} ${styles.heroTape}`} aria-hidden="true" />
             <Image
               src="/media/photos/early-years-formal.jpg"
               alt="Shirley and Cris smiling together in their early years"
@@ -109,7 +110,6 @@ export default function OurStoryPage() {
             />
             <figcaption>telling the true story · 2016</figcaption>
           </figure>
-          <span className={`${styles.tape} ${styles.heroTape}`} aria-hidden="true" />
           <LambySticker
             pose="peek"
             className={styles.heroLamby}
@@ -181,6 +181,7 @@ export default function OurStoryPage() {
       <section className={styles.secondChance} aria-labelledby="second-title">
         <div className={styles.secondPhoto}>
           <figure>
+            <span className={`${styles.tape} ${styles.handsTape}`} aria-hidden="true" />
             <Image
               src="/media/photos/meet-cute-hands.jpg"
               alt="Shirley and Cris holding hands during their meet-cute interview"
@@ -188,7 +189,6 @@ export default function OurStoryPage() {
               sizes="(max-width: 760px) 90vw, 47vw"
             />
           </figure>
-          <span className={`${styles.tape} ${styles.handsTape}`} aria-hidden="true" />
         </div>
 
         <div className={styles.secondCopy}>
