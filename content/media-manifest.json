@@ -7,6 +7,19 @@
   "illustrations": [
     { "source": "public/illustrations/lamby-character-sheet-v1.png", "role": "lamby-character-sheet", "status": "approved" }
   ],
+  "history": [
+    { "source": "IMG_0041.JPG", "derivative": "public/media/photos/history/early-plaid.jpg", "role": "early-years-snapshot" },
+    { "source": "IMG_0095.JPG", "derivative": "public/media/photos/history/early-leather.jpg", "role": "early-years-portrait" },
+    { "source": "IMG_0015.JPG", "derivative": "public/media/photos/history/february-2006.jpg", "role": "dated-night-out", "occurred_on": "2006-02-11" },
+    { "source": "IMG_0121.JPG", "derivative": "public/media/photos/history/pups-at-home.jpg", "role": "pups-at-home", "occurred_on": "2006-10-30" },
+    { "source": "IMG_0024.JPG", "derivative": "public/media/photos/history/packers-day.jpg", "role": "packers-game-day", "occurred_on": "2012-09-30" },
+    { "source": "IMG_0122.JPG", "derivative": "public/media/photos/history/oscars-scrapbook.jpg", "role": "academy-awards-scrapbook" },
+    { "source": "IMG_6987.JPG", "derivative": "public/media/photos/history/baseball-day.jpg", "role": "baseball-game-day", "occurred_on": "2018-07-29" },
+    { "source": "sc5.JPG", "derivative": "public/media/photos/history/stay-home.jpg", "role": "quiet-day-at-home", "occurred_on": "2020-07-26" },
+    { "source": "IMG_5391.JPG", "derivative": "public/media/photos/history/ocean-kiss.jpg", "role": "ocean-view-kiss", "occurred_on": "2021-06-12" },
+    { "source": "IMG_4757.JPG", "derivative": "public/media/photos/history/island-heart.jpg", "role": "travel-heart", "occurred_on": "2022-07-14" },
+    { "source": "FullSizeRender (1).JPG", "derivative": "public/media/photos/history/birthday-sixty.jpg", "role": "milestone-celebration" }
+  ],
   "films": [
     { "title": "Meet-Cute Ceremony Film", "role": "ceremony-origin-story", "source": "Wedding-Moving-Picture-08272016.mov", "transcript": "content/meet-cute-script.json", "poster": "public/media/video/meet-cute-poster.jpg" },
     { "title": "Wedding Feature", "role": "photographer-wedding-retrospective", "source": "5.-IPPOLITE-Wedding-FEATURE.mov", "poster": "public/media/photos/wedding-reflection.png" },
