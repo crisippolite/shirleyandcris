@@ -37,7 +37,7 @@
 .dateStamp span,.dateStamp small { font-size:.62rem; font-weight:900; letter-spacing:.17em; }
 .dateStamp strong { font-family:var(--font-editorial),serif; font-size:4rem; line-height:1; }
 .tape { position:absolute; z-index:7; opacity:.92; }
-.heroTape { top:30px; left:34%; width:145px; height:32px; background:repeating-linear-gradient(45deg,var(--red) 0 10px,#fff 10px 14px); transform:rotate(-4deg); }
+.heroTape { top:0; left:34%; width:145px; height:32px; background:repeating-linear-gradient(45deg,var(--red) 0 10px,#fff 10px 14px); transform:rotate(-4deg); }
 
 .lambySticker { position:absolute; z-index:9; width:170px; margin:0; filter:drop-shadow(4px 6px 5px rgba(44,27,23,.13)); pointer-events:none; }
 .lambyCrop { position:relative; width:100%; aspect-ratio:1; overflow:hidden; }
@@ -85,14 +85,14 @@
 .beforePhoto { right:0; bottom:8px; z-index:9; width:55%; height:440px; transform:rotate(3deg); }
 .beforePhoto img { object-position:center 35%; }
 .mintTape,.pinkTape { width:115px; height:28px; }
-.mintTape { top:18px; left:23%; background:var(--jade); transform:rotate(-4deg); }
-.pinkTape { top:18px; right:16%; background:var(--pink); transform:rotate(4deg); }
+.mintTape { top:0; left:23%; background:var(--jade); transform:rotate(-4deg); }
+.pinkTape { top:0; right:16%; background:var(--pink); transform:rotate(4deg); }
 
 .ceremonySection { display:grid; grid-template-columns:1.15fr .85fr; gap:clamp(48px,7vw,90px); align-items:center; padding:100px clamp(30px,6vw,78px); color:var(--paper); background:var(--ink); }
 .ceremonyPhoto { position:relative; }
 .ceremonyPhoto figure { position:relative; aspect-ratio:4/3; margin:0; padding:12px; background:white; box-shadow:0 25px 65px rgba(0,0,0,.4); transform:rotate(-1.5deg); }
 .ceremonyPhoto img { object-fit:cover; padding:12px; }
-.blackTape { top:18px; left:37%; width:130px; height:30px; background:repeating-linear-gradient(90deg,var(--ink) 0 14px,#fff 14px 18px); transform:rotate(3deg); }
+.blackTape { top:0; left:37%; width:130px; height:30px; background:repeating-linear-gradient(90deg,var(--ink) 0 14px,#fff 14px 18px); transform:rotate(3deg); }
 .ceremonyCopy { position:relative; }
 .ceremonyCopy .eyebrow { color:#ff9ca6; }
 .ceremonyCopy > p:not(.eyebrow) { color:rgba(255,250,242,.74); }
@@ -112,7 +112,7 @@
 .lambyCard span,.lambyCard strong { display:block; }
 .lambyCard span { color:var(--red-deep); font-size:.58rem; font-weight:900; letter-spacing:.12em; }
 .lambyCard strong { margin-top:9px; font-family:var(--font-journal),cursive; font-size:1.3rem; line-height:1.1; }
-.redDotTape { top:18px; left:20%; width:170px; height:31px; background:radial-gradient(circle at 10px 10px,#fff 0 3px,transparent 3.5px),var(--red); background-size:20px 20px; transform:rotate(-3deg); }
+.redDotTape { top:0; left:20%; width:170px; height:31px; background:radial-gradient(circle at 10px 10px,#fff 0 3px,transparent 3.5px),var(--red); background-size:20px 20px; transform:rotate(-3deg); }
 .pawTrail { margin:30px 0 0 30px; color:var(--red); font-size:1.05rem; letter-spacing:.6em; transform:rotate(-8deg); }
 
 .filmSection { position:relative; margin-bottom:125px; padding:100px clamp(28px,6vw,78px) 72px; color:var(--paper); background:var(--red-deep); }
@@ -134,8 +134,8 @@
 .laughPhoto { left:34%; bottom:45px; z-index:10; width:34%; height:380px; transform:rotate(-1deg); }
 .caricaturePhoto { right:5%; bottom:55px; z-index:9; width:29%; height:340px; transform:rotate(3deg); }
 .galleryTapeOne,.galleryTapeTwo { width:120px; height:29px; }
-.galleryTapeOne { top:18px; left:20%; background:var(--jade); transform:rotate(-4deg); }
-.galleryTapeTwo { top:18px; right:17%; background:var(--pink); transform:rotate(4deg); }
+.galleryTapeOne { top:0; left:20%; background:var(--jade); transform:rotate(-4deg); }
+.galleryTapeTwo { top:0; right:17%; background:var(--pink); transform:rotate(4deg); }
 .speechFeature { position:relative; z-index:5; display:grid; grid-template-columns:.72fr 1.28fr; gap:38px; align-items:center; margin:45px 5% 0; padding:38px; background:#fffdf8; border:2px solid var(--ink); box-shadow:8px 10px 0 var(--red); transform:rotate(-.5deg); }
 .speechCopy > span { color:var(--red-deep); font-size:.63rem; font-weight:900; letter-spacing:.15em; }
 .speechCopy h3 { margin:13px 0; font-family:var(--font-editorial),serif; font-size:2.35rem; line-height:1.05; }

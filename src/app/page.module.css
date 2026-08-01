@@ -232,7 +232,7 @@
 }
 
 .tapePink {
-  top: 20px;
+  top: 0;
   left: 34%;
   width: 138px;
   height: 35px;
@@ -667,7 +667,7 @@
 .tapeJade,
 .tapeBlack,
 .tapePinkSmall {
-  top: 18px;
+  top: 0;
   left: 50%;
   width: 106px;
   height: 28px;
