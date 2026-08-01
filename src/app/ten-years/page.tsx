@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 };
 
 type LambyPose = "proud" | "peek" | "card" | "sleep";
+type SpecialLambyPose = "movie" | "scrapbook";
 type TapeColor = "red" | "pink" | "jade" | "gold" | "black";
 
 const memories = [
@@ -85,6 +86,30 @@ function LambySticker({
           width={1254}
           height={1254}
           className={styles.lambySheet}
+        />
+      </div>
+    </figure>
+  );
+}
+
+function SpecialLambySticker({
+  pose,
+  className = "",
+  label,
+}: {
+  pose: SpecialLambyPose;
+  className?: string;
+  label: string;
+}) {
+  return (
+    <figure className={`${styles.specialLambySticker} ${styles[`special-${pose}`]} ${className}`}>
+      <div className={styles.specialLambyCrop}>
+        <Image
+          src="/illustrations/lamby-special-poses-v1.webp"
+          alt={label}
+          width={1254}
+          height={1254}
+          className={styles.specialLambySheet}
         />
       </div>
     </figure>
@@ -205,6 +230,17 @@ export default function TenYearsPage() {
         </div>
         <div className={styles.filmNote}>
           <span>start here, Shirley ♡</span>
+          <div className={styles.filmLambyMoment}>
+            <SpecialLambySticker
+              pose="movie"
+              className={styles.movieLamby}
+              label="Lamby in his tuxedo holding popcorn and a movie clapperboard"
+            />
+            <div className={styles.movieNote} aria-hidden="true">
+              <strong>movie night!</strong>
+              <small>snacks encouraged</small>
+            </div>
+          </div>
           <i aria-hidden="true">囍</i>
         </div>
       </section>
@@ -235,6 +271,18 @@ export default function TenYearsPage() {
           <span aria-hidden="true">✦</span>
           turns out “forever” is mostly a lot of really good Tuesdays
         </div>
+
+        <aside className={styles.napBreak}>
+          <SpecialLambySticker
+            pose="scrapbook"
+            className={styles.scrapbookLamby}
+            label="Lamby in his tuxedo adding a heart sticker to an open planner"
+          />
+          <div className={styles.napNote}>
+            this page gets a heart sticker
+            <small>— Lamby, scrapbook supervisor</small>
+          </div>
+        </aside>
       </section>
 
       <section className={styles.letterSection} aria-labelledby="letter-title">
