@@ -126,8 +126,9 @@
 .promiseOne .photoWindow img { object-position: center 36%; }
 .promiseTwo { right: 0; bottom: 0; z-index: 5; width: 57%; height: 430px; transform: rotate(4deg); }
 .promiseTwo .photoWindow img { object-position: center; }
-.ringSticker { position: absolute; top: 20px; right: 4%; z-index: 9; display: grid; width: 105px; height: 105px; place-items: center; color: var(--red); background: #fff0a8; border: 2px solid var(--ink); border-radius: 50%; box-shadow: 4px 4px 0 var(--ink); font-family: var(--font-journal),cursive; font-size: 3rem; transform: rotate(8deg); }
-.ringSticker small { position: absolute; bottom: 15px; color: var(--ink); font-size: .9rem; }
+.ringSticker { position: absolute; top: 20px; right: 4%; z-index: 9; display: grid; width: 105px; height: 105px; place-items: center; background: #fff0a8; border: 2px solid var(--ink); border-radius: 50%; box-shadow: 4px 4px 0 var(--ink); font-family: var(--font-journal),cursive; transform: rotate(8deg); }
+.ringGlyph { margin-top: -13px; font-family: sans-serif; font-size: 3.25rem; line-height: 1; filter: drop-shadow(1px 2px 0 rgba(24,19,19,.2)); transform: rotate(-15deg); }
+.ringSticker small { position: absolute; bottom: 12px; color: var(--ink); font-size: .9rem; }
 
 .memoryRibbon { display: flex; align-items: center; justify-content: space-around; gap: 12px; width: calc(100% + 32px); margin: 18px -16px; padding: 12px 20px; overflow: hidden; color: var(--ink); background: #f2b3bf; box-shadow: 0 4px 9px rgba(45,27,24,.12); font-size: .58rem; font-weight: 900; letter-spacing: .13em; white-space: nowrap; transform: rotate(-.5deg); }
 .memoryRibbon i { color: var(--red); font-family: var(--font-journal),cursive; font-size: 1.35rem; font-style: normal; }
@@ -214,6 +215,8 @@
   .promiseOne { width: 54%; height: 77%; }
   .promiseTwo { width: 63%; height: 56%; }
   .ringSticker { width: 88px; height: 88px; }
+  .ringGlyph { margin-top: -11px; font-size: 2.7rem; }
+  .ringSticker small { bottom: 9px; font-size: .8rem; }
   .memoryRibbon { justify-content: flex-start; }
 
   .adventureCollage { min-height: min(190vw,880px); }

@@ -292,7 +292,10 @@ export default function ThroughTheYearsPage() {
             tape="red"
             className={styles.promiseTwo}
           />
-          <div className={styles.ringSticker} aria-hidden="true">♡<small>engaged!</small></div>
+          <div className={styles.ringSticker} aria-hidden="true">
+            <span className={styles.ringGlyph}>💍</span>
+            <small>engaged!</small>
+          </div>
         </div>
       </article>
 
