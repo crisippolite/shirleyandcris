@@ -59,7 +59,7 @@
 .anniversaryStamp small,.anniversaryStamp strong,.anniversaryStamp span { display: block; }
 .anniversaryStamp small,.anniversaryStamp span { font-size: .58rem; font-weight: 900; letter-spacing: .16em; }
 .anniversaryStamp strong { font-family: var(--font-editorial),serif; font-size: 4rem; line-height: .92; }
-.heroSticker { position: absolute; top: 6px; right: 6%; z-index: 13; padding: 8px 13px; background: #fff0a8; border: 1px solid rgba(24,19,19,.14); box-shadow: 3px 4px 0 rgba(24,19,19,.1); font-family: var(--font-journal),cursive; font-size: 1.18rem; transform: rotate(-3deg); }
+.heroSticker { position: absolute; top: 6px; left: 6%; z-index: 13; padding: 8px 13px; background: #fff0a8; border: 1px solid rgba(24,19,19,.14); box-shadow: 3px 4px 0 rgba(24,19,19,.1); font-family: var(--font-journal),cursive; font-size: 1.18rem; transform: rotate(-3deg); }
 .heroLamby { right: -26px; top: 30px; width: 142px; transform: rotate(7deg); }
 
 .filmSection { position: relative; padding: 105px clamp(34px,7vw,92px) 84px; color: var(--paper); background: radial-gradient(circle at 12% 8%,rgba(201,31,44,.25),transparent 27%),var(--ink); }
@@ -165,7 +165,7 @@
   .heroPhoto figcaption span { font-size: .49rem; }
   .anniversaryStamp { right: -5px; bottom: -5px; width: 102px; }
   .anniversaryStamp strong { font-size: 3.2rem; }
-  .heroSticker { right: 3%; }
+  .heroSticker { left: 3%; }
   .heroLamby { top: 24px; right: -13px; width: 103px; }
   .filmSection { padding: 85px 13px 60px; }
   .filmHeading { gap: 22px; padding: 0 10px; }
