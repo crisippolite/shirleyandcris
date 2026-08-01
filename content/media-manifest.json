@@ -5,7 +5,8 @@
     { "source": "fav10.jpg", "role": "intimate-ring-closeup" }
   ],
   "illustrations": [
-    { "source": "public/illustrations/lamby-character-sheet-v1.png", "role": "lamby-character-sheet", "status": "approved" }
+    { "source": "public/illustrations/lamby-character-sheet-v1.png", "role": "lamby-character-sheet", "status": "approved" },
+    { "source": "public/illustrations/lamby-special-poses-v1.webp", "role": "lamby-movie-and-scrapbook-poses", "status": "generated-for-review" }
   ],
   "history": [
     { "source": "IMG_0041.JPG", "derivative": "public/media/photos/history/early-plaid.jpg", "role": "early-years-snapshot" },
