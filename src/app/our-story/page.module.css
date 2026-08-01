@@ -166,8 +166,9 @@
   box-shadow: 0 22px 55px rgba(45,27,24,0.2);
 }
 
-.heroPhoto { inset: 15px 20px 55px 18px; transform: rotate(2.5deg); }
-.interviewSnapshot { right: -5px; bottom: 0; z-index: 3; width: 52%; height: 235px; transform: rotate(-3deg); }
+/* Framed photos stay above decorative washi so captions always remain legible. */
+.heroPhoto { inset: 15px 20px 55px 18px; z-index: 8; transform: rotate(2.5deg); }
+.interviewSnapshot { right: -5px; bottom: 0; z-index: 9; width: 52%; height: 235px; transform: rotate(-3deg); }
 .heroPhoto img, .interviewSnapshot img { object-fit: cover; padding: 12px 12px 54px; }
 .heroPhoto img { object-position: center 35%; filter: sepia(0.1) saturate(0.76) contrast(1.04); }
 .interviewSnapshot img { object-position: center; filter: saturate(0.72) contrast(1.04); }

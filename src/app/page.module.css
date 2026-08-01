@@ -198,6 +198,7 @@
 .heroPhoto {
   position: absolute;
   inset: 25px 26px 48px 0;
+  z-index: 6;
   margin: 0;
   padding: 14px 14px 62px;
   background: white;
