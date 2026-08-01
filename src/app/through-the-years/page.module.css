@@ -75,6 +75,8 @@
 .calendarGrid span:nth-child(7n) { border-right: 1px solid var(--line); }
 .calendarGrid span:nth-last-child(-n+7) { border-bottom: 1px solid var(--line); }
 .metDay::after { position: absolute; inset: 7px; display: grid; place-items: center; color: #fff; background: var(--red); border-radius: 50%; content: "met!"; font-family: var(--font-journal),cursive; font-size: .95rem; transform: rotate(-10deg); }
+.flowersDay::before { position: absolute; top: 3px; right: 7px; display: grid; width: 28px; height: 28px; place-items: center; background: #ffe8ec; border: 2px solid #fff; border-radius: 50%; box-shadow: 1px 2px 0 rgba(24,19,19,.18); content: "💐"; font-size: 1rem; line-height: 1; transform: rotate(7deg); }
+.flowersDay::after { position: absolute; right: 5px; bottom: 3px; color: var(--red-deep); content: "at work"; font-family: var(--font-journal),cursive; font-size: .8rem; line-height: 1; transform: rotate(-5deg); }
 .calendarStickers { position: absolute; right: -18px; bottom: -18px; display: flex; gap: 7px; align-items: center; }
 .calendarStickers b { display: inline-block; padding: 5px 8px; background: #ffe89a; font-family: var(--font-journal),cursive; font-size: 1rem; font-weight: 500; transform: rotate(4deg); }
 .calendarStickers b:nth-child(2) { background: var(--jade); transform: rotate(-5deg); }
@@ -189,6 +191,8 @@
   .calendarCopy h2,.eraCopy h2,.closing h2 { font-size: clamp(3.5rem,16vw,5.4rem); }
   .miniCalendar { padding: 20px 14px; }
   .calendarGrid span { min-height: 40px; }
+  .flowersDay::before { top: 2px; right: 2px; width: 22px; height: 22px; font-size: .78rem; }
+  .flowersDay::after { right: 2px; bottom: 2px; font-size: .62rem; }
 
   .era { min-height: auto; }
   .eraMarker { top: 28px; }
