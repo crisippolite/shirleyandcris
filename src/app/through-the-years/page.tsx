@@ -13,6 +13,14 @@ export const metadata: Metadata = {
 type LambyPose = "proud" | "peek" | "card" | "sleep";
 type TapeColor = "red" | "pink" | "jade" | "gold" | "black";
 
+const july1997Calendar = [
+  null,
+  ...Array.from({ length: 31 }, (_, index) => index + 1),
+  null,
+  null,
+  null,
+];
+
 function LambySticker({
   pose,
   className = "",
@@ -153,7 +161,7 @@ export default function ThroughTheYearsPage() {
       <section className={styles.calendarIntro} id="the-calendar" aria-labelledby="calendar-title">
         <div className={styles.calendarTab}>OUR VERY LONG CALENDAR</div>
         <div className={styles.calendarCopy}>
-          <p className={styles.eyebrow}>July 1997 → today</p>
+          <p className={styles.eyebrow}>Friday, July 25, 1997 → today</p>
           <h2 id="calendar-title">The calendar kept filling up.</h2>
           <p>
             Some dates got a gold star. Some got a football, a tiny airplane, or
@@ -163,9 +171,9 @@ export default function ThroughTheYearsPage() {
         <div className={styles.miniCalendar} aria-hidden="true">
           <div className={styles.weekdays}><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div>
           <div className={styles.calendarGrid}>
-            {Array.from({ length: 28 }, (_, index) => (
-              <span key={index} className={index === 4 ? styles.metDay : index === 16 ? styles.heartDay : ""}>
-                {index + 1}
+            {july1997Calendar.map((day, index) => (
+              <span key={index} className={day === 25 ? styles.metDay : ""}>
+                {day}
               </span>
             ))}
           </div>
