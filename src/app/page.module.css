@@ -240,7 +240,7 @@
     radial-gradient(circle at 10px 9px, rgba(255,255,255,0.75) 0 2px, transparent 2.4px),
     var(--pink);
   background-size: 20px 18px;
-  transform: rotate(-3deg);
+  transform: translateY(-50%) rotate(-3deg);
 }
 
 .miniSticker {
@@ -671,11 +671,11 @@
   left: 50%;
   width: 106px;
   height: 28px;
-  transform: translateX(-50%) rotate(-2deg);
+  transform: translate(-50%, -50%) rotate(-2deg);
 }
 
 .tapeJade { background: var(--jade); }
-.tapeBlack { background: repeating-linear-gradient(90deg, var(--ink) 0 16px, #fff 16px 20px); transform: translateX(-50%) rotate(3deg); }
+.tapeBlack { background: repeating-linear-gradient(90deg, var(--ink) 0 16px, #fff 16px 20px); transform: translate(-50%, -50%) rotate(3deg); }
 .tapePinkSmall { background: var(--pink); }
 
 .weddingLamby {

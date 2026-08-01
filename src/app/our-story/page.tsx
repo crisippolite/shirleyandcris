@@ -222,10 +222,21 @@ export default function OurStoryPage() {
             the flowers became the beginning of Shirley + Cris.
           </p>
         </div>
-        <div className={styles.roseNotes} aria-hidden="true">
-          <span>rose delivery!</span>
-          <span>♡ keep this one</span>
-          <span>best Monday ever</span>
+        <div className={styles.roseKeepsake}>
+          <div className={styles.rosePetals} aria-hidden="true">
+            <i /><i /><i /><i /><i />
+          </div>
+          <article className={styles.floristCard} aria-label="The card Cris sent with Shirley’s roses">
+            <span>with the roses</span>
+            <p>Glad to have met you on Friday night.<br />Call me anytime—</p>
+            <strong>Cris</strong>
+            <small>969-4041</small>
+          </article>
+          <div className={styles.roseNotes} aria-hidden="true">
+            <span>rose delivery!</span>
+            <span>♡ keep this one</span>
+            <span>best Monday ever</span>
+          </div>
         </div>
       </section>
 

@@ -188,7 +188,7 @@
 .interviewSnapshot figcaption { font-size: 0.94rem; }
 
 .tape { position: absolute; z-index: 7; opacity: 0.92; }
-.heroTape { top: 0; left: 40%; width: 125px; height: 31px; background: var(--pink); transform: rotate(-4deg); }
+.heroTape { top: 0; left: 40%; width: 125px; height: 31px; background: var(--pink); transform: translateY(-50%) rotate(-4deg); }
 
 .lambySticker { position: absolute; z-index: 9; width: 170px; margin: 0; filter: drop-shadow(4px 6px 5px rgba(44,27,23,0.13)); pointer-events: none; }
 .lambyCrop { position: relative; width: 100%; aspect-ratio: 1; overflow: hidden; }
@@ -327,7 +327,7 @@
 .secondPhoto { position: relative; }
 .secondPhoto figure { position: relative; aspect-ratio: 16 / 10; margin: 0; padding: 12px; background: white; box-shadow: 0 25px 60px rgba(0,0,0,0.4); transform: rotate(-2deg); }
 .secondPhoto img { object-fit: cover; padding: 12px; filter: saturate(0.7) contrast(1.03); }
-.handsTape { top: 0; left: 32%; width: 128px; height: 30px; background: var(--red); transform: rotate(3deg); }
+.handsTape { top: 0; left: 32%; width: 128px; height: 30px; background: var(--red); transform: translateY(-50%) rotate(3deg); }
 .secondCopy .eyebrow { color: #ff9aa6; }
 .secondCopy blockquote { margin: 30px 0 18px; font-family: var(--font-editorial), serif; font-size: clamp(1.5rem, 2.6vw, 2.4rem); line-height: 1.45; }
 .shirleyAside { margin: 0; color: #ffb8c0; font-family: var(--font-journal), cursive; font-size: clamp(1.7rem, 3.4vw, 2.6rem); line-height: 1.05; transform: rotate(-2deg); }
@@ -354,7 +354,22 @@
 .rosesDate span, .rosesDate small { font-size: 0.62rem; font-weight: 900; letter-spacing: 0.13em; }
 .rosesDate strong { font-family: var(--font-editorial), serif; font-size: 3.7rem; line-height: 1; }
 .roses > div:nth-child(2) > p:last-child { max-width: 48ch; margin: 26px 0 0; font-family: var(--font-editorial), serif; font-size: 1.05rem; line-height: 1.75; }
-.roseNotes { display: flex; flex-wrap: wrap; gap: 9px; justify-content: center; }
+.roseKeepsake { position: relative; display: grid; justify-items: center; min-height: 320px; }
+.floristCard { position: relative; z-index: 2; width: min(100%,300px); margin: 0; padding: 28px 30px 24px; background: #fffefb; border: 1px solid rgba(24,19,19,0.18); box-shadow: 0 16px 35px rgba(45,27,24,0.18); transform: rotate(2deg); }
+.floristCard::before { position: absolute; top: 8px; right: 8px; bottom: 8px; left: 8px; border: 1px solid rgba(201,31,44,0.28); content: ""; pointer-events: none; }
+.floristCard > span { position: relative; display: block; color: var(--red-deep); font-size: 0.58rem; font-weight: 900; letter-spacing: 0.14em; text-transform: uppercase; }
+.floristCard p { position: relative; margin: 22px 0 12px; font-family: var(--font-journal),cursive; font-size: 1.34rem; line-height: 1.25; }
+.floristCard strong,.floristCard small { position: relative; display: block; font-family: var(--font-journal),cursive; font-weight: 400; }
+.floristCard strong { color: var(--red-deep); font-size: 1.5rem; transform: rotate(-2deg); }
+.floristCard small { margin-top: 2px; color: rgba(24,19,19,0.68); font-size: 1.05rem; letter-spacing: 0.06em; }
+.rosePetals { position: absolute; inset: -18px -15px 65px; z-index: 1; pointer-events: none; }
+.rosePetals i { position: absolute; width: 18px; height: 29px; background: linear-gradient(145deg,#e23a49,var(--red-deep)); border-radius: 90% 12% 85% 15%; box-shadow: inset 3px 2px 0 rgba(255,255,255,0.18); }
+.rosePetals i:nth-child(1) { top: 8px; left: 3%; transform: rotate(-32deg); }
+.rosePetals i:nth-child(2) { top: 70px; right: 2%; transform: rotate(28deg) scale(.84); }
+.rosePetals i:nth-child(3) { bottom: 18px; left: 13%; transform: rotate(55deg) scale(.72); }
+.rosePetals i:nth-child(4) { right: 18%; bottom: 0; transform: rotate(-48deg) scale(.9); }
+.rosePetals i:nth-child(5) { top: -2px; right: 27%; transform: rotate(18deg) scale(.68); }
+.roseNotes { display: flex; flex-wrap: wrap; gap: 9px; justify-content: center; margin-top: 24px; }
 .roseNotes span { padding: 7px 10px; font-family: var(--font-journal), cursive; font-size: 1.15rem; background: #fac6cf; transform: rotate(-2deg); }
 .roseNotes span:nth-child(2) { background: #fff0a8; transform: rotate(3deg); }
 .roseNotes span:nth-child(3) { background: #bce2d2; transform: rotate(-1deg); }
@@ -406,7 +421,8 @@
   .hero { grid-template-columns: 0.9fr 1.1fr; padding-right: 10px; padding-left: 10px; }
   .quoteCard { min-height: 500px; padding-right: 40px; padding-left: 40px; }
   .roses { grid-template-columns: 120px 1fr; }
-  .roseNotes { grid-column: 2; justify-content: flex-start; }
+  .roseKeepsake { grid-column: 2; justify-items: start; }
+  .roseNotes { justify-content: flex-start; }
   .yearPage figure { height: 330px; }
 }
 
@@ -441,7 +457,8 @@
   .roses { grid-template-columns: 90px 1fr; padding: 78px 18px; }
   .rosesDate { width: 78px; }
   .rosesDate strong { font-size: 2.8rem; }
-  .roseNotes { grid-column: 1 / -1; }
+  .roseKeepsake { grid-column: 1 / -1; justify-items: center; width: 100%; margin-top: 18px; }
+  .roseNotes { justify-content: center; }
 
   .filmSection { margin-bottom: 95px; padding: 78px 14px 55px; }
   .filmHeading { margin-bottom: 34px; }
