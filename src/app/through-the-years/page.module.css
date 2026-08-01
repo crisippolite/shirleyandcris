@@ -137,8 +137,8 @@
 .adventureCollage { position: relative; min-height: 820px; }
 .adventureOne { top: 15px; left: 0; width: 59%; height: 430px; transform: rotate(-3deg); }
 .adventureTwo { top: 0; right: 0; width: 43%; height: 390px; transform: rotate(4deg); }
-.adventureThree { left: 7%; bottom: 15px; z-index: 5; width: 56%; height: 365px; transform: rotate(3deg); }
-.adventureFour { right: 1%; bottom: 0; z-index: 6; width: 43%; height: 410px; transform: rotate(-3deg); }
+.adventureThree { bottom: 0; left: 0; z-index: 5; width: 59%; height: 365px; transform: rotate(3deg); }
+.adventureFour { right: 0; bottom: 0; z-index: 6; width: 43%; height: 365px; transform: rotate(-3deg); }
 .adventureFour .photoWindow img { object-position: center; }
 .passportSticker { display: inline-block; margin-top: 30px; padding: 8px 12px; color: var(--paper); background: var(--red); border: 2px dashed var(--paper); outline: 2px solid var(--red); font-size: .65rem; font-weight: 900; letter-spacing: .13em; transform: rotate(-3deg); }
 
