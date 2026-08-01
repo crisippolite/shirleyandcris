@@ -7,6 +7,9 @@ import styles from "./page.module.css";
 const WEDDING_FEATURE =
   "https://www.dropbox.com/scl/fi/xhpfaru3asmijfpldubcu/5.-IPPOLITE-Wedding-FEATURE.mov?rlkey=ipzfkdeqt7m3xc87v833m1i8j&dl=1";
 
+const COLE_SPEECH =
+  "https://www.dropbox.com/scl/fi/ivvgiyrdz8eod756cd3n3/Cole-Speech.mov?rlkey=up5lt41246ul8q8gz47xcqnus&dl=1";
+
 const schedule = [
   { time: "8:50", suffix: "AM", title: "Off to Euro", note: "Shirley leaves the Iron Horse Hotel.", sticker: "let’s go!" },
   { time: "9:30", suffix: "AM", title: "Getting ready", note: "Settle in, champagne, hair, makeup, happy nerves.", sticker: "mimosas ♡" },
@@ -221,7 +224,28 @@ export default function WeddingDayPage() {
           <div className={styles.pawTrail} aria-hidden="true">● · ● · ● · ●</div>
         </div>
         <div className={styles.lambyStage}>
-          <LambySticker pose="proud" className={styles.proudLamby} label="Lamby standing proudly in his wedding tuxedo" />
+          <figure className={styles.lambeauPhoto}>
+            <Image
+              src="/media/photos/wedding-lambeau-rings.jpg"
+              alt="Lambeau in his wedding tuxedo lying on Shirley’s dress train with the ring pillow secured on his back"
+              fill
+              sizes="(max-width: 760px) 82vw, 43vw"
+            />
+            <figcaption>rings secured · underbite perfect</figcaption>
+          </figure>
+          <figure className={styles.ringsInset}>
+            <Image
+              src="/media/photos/wedding-rings.png"
+              alt="Shirley and Cris’s wedding rings in their box"
+              fill
+              sizes="(max-width: 760px) 40vw, 17vw"
+            />
+          </figure>
+          <LambySticker
+            pose="proud"
+            className={styles.proudLamby}
+            label="Cartoon Lamby standing proudly beside his ring-bearer photograph"
+          />
           <div className={styles.lambyCard} aria-hidden="true">
             <span>OFFICIAL DUTIES</span>
             <strong>Ring bearer<br />Best boy<br />Scene stealer</strong>
@@ -293,15 +317,31 @@ export default function WeddingDayPage() {
           <span className={`${styles.tape} ${styles.galleryTapeTwo}`} aria-hidden="true" />
         </div>
 
-        <aside className={styles.speechCard} aria-label="A memorable wedding speech">
-          <span>THE TOAST EVERYONE REMEMBERED</span>
-          <h3>This page is saving a seat for the hit speech.</h3>
-          <p>
-            When the original recording finishes its trip out of the archive,
-            Cris’s brother gets the replay button he earned.
-          </p>
-          <strong className={styles.handNote}>worth another round of applause ♡</strong>
-        </aside>
+        <section className={styles.speechFeature} aria-labelledby="cole-speech-title">
+          <div className={styles.speechCopy}>
+            <span>THE TOAST EVERYONE REMEMBERED · 06:20</span>
+            <h3 id="cole-speech-title">Cole’s best-man speech.</h3>
+            <p>
+              Brother, best man, and the one who brought the room down. The hit
+              speech now has the replay button it earned.
+            </p>
+            <strong className={styles.handNote}>worth another round of applause ♡</strong>
+          </div>
+          <div className={styles.speechVideo}>
+            <span className={`${styles.tape} ${styles.speechTape}`} aria-hidden="true" />
+            <video
+              controls
+              preload="metadata"
+              poster="/media/video/cole-speech-poster.jpg"
+              aria-label="Cole’s best-man speech"
+            >
+              <source src={COLE_SPEECH} type="video/quicktime" />
+              <source src={COLE_SPEECH} />
+              Your browser does not support embedded video. You can{" "}
+              <a href={COLE_SPEECH}>watch Cole’s speech here</a>.
+            </video>
+          </div>
+        </section>
       </section>
 
       <section className={styles.closing} aria-labelledby="closing-title">
