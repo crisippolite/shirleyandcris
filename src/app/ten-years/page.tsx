@@ -335,6 +335,10 @@ export default function TenYearsPage() {
           </p>
           <p className={styles.letterClose}>Happy tenth anniversary. I love you.</p>
           <p className={styles.signature}>Always,<br />Cris</p>
+          <div className={styles.rainyDaySticker} aria-hidden="true">
+            <span>🌧️</span>
+            <small>even the rainy days ♡</small>
+          </div>
         </article>
       </section>
 
