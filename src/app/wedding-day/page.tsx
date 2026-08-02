@@ -8,7 +8,7 @@ const WEDDING_FEATURE =
   "https://www.dropbox.com/scl/fi/xhpfaru3asmijfpldubcu/5.-IPPOLITE-Wedding-FEATURE.mov?rlkey=ipzfkdeqt7m3xc87v833m1i8j&dl=1";
 
 const COLE_SPEECH =
-  "https://www.dropbox.com/scl/fi/ivvgiyrdz8eod756cd3n3/Cole-Speech.mov?rlkey=up5lt41246ul8q8gz47xcqnus&dl=1";
+  "https://www.dropbox.com/scl/fi/ivvgiyrdz8eod756cd3n3/Cole-Speech.mov?rlkey=up5lt41246ul8q8gz47xcqnus&raw=1";
 
 const schedule = [
   { time: "8:50", suffix: "AM", title: "Off to Euro", note: "Shirley leaves the Iron Horse Hotel.", sticker: "let’s go!" },
