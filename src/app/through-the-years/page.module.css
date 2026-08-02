@@ -56,7 +56,7 @@
 .heroEarly { top: 65px; left: 0; width: 53%; height: 465px; transform: rotate(-4deg); }
 .heroEarly .photoWindow img { object-position: center 35%; }
 .heroNow { top: 0; right: -4%; z-index: 5; width: 57%; height: 550px; transform: rotate(3deg); }
-.heroNow .photoWindow img { object-position: 44% center; }
+.heroNow .photoWindow img { object-position: 32% center; }
 .firstDateStamp { position: absolute; bottom: 12px; left: 33%; z-index: 9; width: 113px; padding: 10px; color: #fff; background: var(--red); border: 3px solid #fff; box-shadow: 4px 5px 0 var(--ink); text-align: center; transform: rotate(-5deg); }
 .firstDateStamp span,.firstDateStamp strong,.firstDateStamp small { display: block; }
 .firstDateStamp span,.firstDateStamp small { font-size: .58rem; font-weight: 900; letter-spacing: .15em; }
