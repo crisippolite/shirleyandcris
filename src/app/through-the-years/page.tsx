@@ -172,7 +172,10 @@ export default function ThroughTheYearsPage() {
           <div className={styles.weekdays}><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div>
           <div className={styles.calendarGrid}>
             {july1997Calendar.map((day, index) => (
-              <span key={index} className={day === 25 ? styles.metDay : ""}>
+              <span
+                key={index}
+                className={day === 25 ? styles.metDay : day === 28 ? styles.flowersDay : ""}
+              >
                 {day}
               </span>
             ))}
@@ -289,7 +292,10 @@ export default function ThroughTheYearsPage() {
             tape="red"
             className={styles.promiseTwo}
           />
-          <div className={styles.ringSticker} aria-hidden="true">♡<small>engaged!</small></div>
+          <div className={styles.ringSticker} aria-hidden="true">
+            <span className={styles.ringGlyph}>💍</span>
+            <small>engaged!</small>
+          </div>
         </div>
       </article>
 

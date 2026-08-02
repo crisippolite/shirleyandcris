@@ -61,7 +61,7 @@
 .firstDateStamp span,.firstDateStamp strong,.firstDateStamp small { display: block; }
 .firstDateStamp span,.firstDateStamp small { font-size: .58rem; font-weight: 900; letter-spacing: .15em; }
 .firstDateStamp strong { font-family: var(--font-editorial),serif; font-size: 3.8rem; line-height: 1; }
-.heroDoodle { position: absolute; right: 5%; bottom: 14px; color: var(--red-deep); font-family: var(--font-journal),cursive; font-size: 1.5rem; transform: rotate(-4deg); }
+.heroDoodle { position: absolute; right: clamp(145px,22%,200px); bottom: 14px; color: var(--red-deep); font-family: var(--font-journal),cursive; font-size: 1.5rem; transform: rotate(-4deg); }
 .heroLamby { right: -30px; bottom: 15px; width: 155px; transform: rotate(6deg); }
 
 .calendarIntro { position: relative; display: grid; grid-template-columns: .9fr 1.1fr; gap: 70px; align-items: center; padding: 110px clamp(40px,8vw,105px); background: #fffdf8; }
@@ -75,6 +75,8 @@
 .calendarGrid span:nth-child(7n) { border-right: 1px solid var(--line); }
 .calendarGrid span:nth-last-child(-n+7) { border-bottom: 1px solid var(--line); }
 .metDay::after { position: absolute; inset: 7px; display: grid; place-items: center; color: #fff; background: var(--red); border-radius: 50%; content: "met!"; font-family: var(--font-journal),cursive; font-size: .95rem; transform: rotate(-10deg); }
+.flowersDay::before { position: absolute; top: 3px; right: 7px; display: grid; width: 28px; height: 28px; place-items: center; background: #ffe8ec; border: 2px solid #fff; border-radius: 50%; box-shadow: 1px 2px 0 rgba(24,19,19,.18); content: "💐"; font-size: 1rem; line-height: 1; transform: rotate(7deg); }
+.flowersDay::after { position: absolute; right: 5px; bottom: 3px; color: var(--red-deep); content: "at work"; font-family: var(--font-journal),cursive; font-size: .8rem; line-height: 1; transform: rotate(-5deg); }
 .calendarStickers { position: absolute; right: -18px; bottom: -18px; display: flex; gap: 7px; align-items: center; }
 .calendarStickers b { display: inline-block; padding: 5px 8px; background: #ffe89a; font-family: var(--font-journal),cursive; font-size: 1rem; font-weight: 500; transform: rotate(4deg); }
 .calendarStickers b:nth-child(2) { background: var(--jade); transform: rotate(-5deg); }
@@ -124,8 +126,9 @@
 .promiseOne .photoWindow img { object-position: center 36%; }
 .promiseTwo { right: 0; bottom: 0; z-index: 5; width: 57%; height: 430px; transform: rotate(4deg); }
 .promiseTwo .photoWindow img { object-position: center; }
-.ringSticker { position: absolute; top: 20px; right: 4%; z-index: 9; display: grid; width: 105px; height: 105px; place-items: center; color: var(--red); background: #fff0a8; border: 2px solid var(--ink); border-radius: 50%; box-shadow: 4px 4px 0 var(--ink); font-family: var(--font-journal),cursive; font-size: 3rem; transform: rotate(8deg); }
-.ringSticker small { position: absolute; bottom: 15px; color: var(--ink); font-size: .9rem; }
+.ringSticker { position: absolute; top: 20px; right: 4%; z-index: 9; display: grid; width: 105px; height: 105px; place-items: center; background: #fff0a8; border: 2px solid var(--ink); border-radius: 50%; box-shadow: 4px 4px 0 var(--ink); font-family: var(--font-journal),cursive; transform: rotate(8deg); }
+.ringGlyph { margin-top: -13px; font-family: sans-serif; font-size: 3.25rem; line-height: 1; filter: drop-shadow(1px 2px 0 rgba(24,19,19,.2)); transform: rotate(-15deg); }
+.ringSticker small { position: absolute; bottom: 12px; color: var(--ink); font-size: .9rem; }
 
 .memoryRibbon { display: flex; align-items: center; justify-content: space-around; gap: 12px; width: calc(100% + 32px); margin: 18px -16px; padding: 12px 20px; overflow: hidden; color: var(--ink); background: #f2b3bf; box-shadow: 0 4px 9px rgba(45,27,24,.12); font-size: .58rem; font-weight: 900; letter-spacing: .13em; white-space: nowrap; transform: rotate(-.5deg); }
 .memoryRibbon i { color: var(--red); font-family: var(--font-journal),cursive; font-size: 1.35rem; font-style: normal; }
@@ -134,8 +137,8 @@
 .adventureCollage { position: relative; min-height: 820px; }
 .adventureOne { top: 15px; left: 0; width: 59%; height: 430px; transform: rotate(-3deg); }
 .adventureTwo { top: 0; right: 0; width: 43%; height: 390px; transform: rotate(4deg); }
-.adventureThree { left: 7%; bottom: 15px; z-index: 5; width: 56%; height: 365px; transform: rotate(3deg); }
-.adventureFour { right: 1%; bottom: 0; z-index: 6; width: 43%; height: 410px; transform: rotate(-3deg); }
+.adventureThree { bottom: 0; left: 0; z-index: 5; width: 59%; height: 365px; transform: rotate(3deg); }
+.adventureFour { right: 0; bottom: 0; z-index: 6; width: 43%; height: 365px; transform: rotate(-3deg); }
 .adventureFour .photoWindow img { object-position: center; }
 .passportSticker { display: inline-block; margin-top: 30px; padding: 8px 12px; color: var(--paper); background: var(--red); border: 2px dashed var(--paper); outline: 2px solid var(--red); font-size: .65rem; font-weight: 900; letter-spacing: .13em; transform: rotate(-3deg); }
 
@@ -182,12 +185,15 @@
   .heroEarly { top: 60px; width: 59%; height: 65%; }
   .heroNow { width: 58%; height: 72%; }
   .firstDateStamp { bottom: 0; left: 27%; }
+  .heroDoodle { right: auto; bottom: 96px; left: 0; font-size: 1.1rem; }
   .heroLamby { right: -15px; width: 125px; }
 
   .calendarIntro { grid-template-columns: 1fr; gap: 45px; padding: 85px 18px 95px; }
   .calendarCopy h2,.eraCopy h2,.closing h2 { font-size: clamp(3.5rem,16vw,5.4rem); }
   .miniCalendar { padding: 20px 14px; }
   .calendarGrid span { min-height: 40px; }
+  .flowersDay::before { top: 2px; right: 2px; width: 22px; height: 22px; font-size: .78rem; }
+  .flowersDay::after { right: 2px; bottom: 2px; font-size: .62rem; }
 
   .era { min-height: auto; }
   .eraMarker { top: 28px; }
@@ -209,6 +215,8 @@
   .promiseOne { width: 54%; height: 77%; }
   .promiseTwo { width: 63%; height: 56%; }
   .ringSticker { width: 88px; height: 88px; }
+  .ringGlyph { margin-top: -11px; font-size: 2.7rem; }
+  .ringSticker small { bottom: 9px; font-size: .8rem; }
   .memoryRibbon { justify-content: flex-start; }
 
   .adventureCollage { min-height: min(190vw,880px); }

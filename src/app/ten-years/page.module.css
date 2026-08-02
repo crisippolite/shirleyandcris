@@ -133,6 +133,9 @@
 .letter > p:not(.eyebrow):not(.signature):not(.letterClose) { position: relative; margin: 20px 0 0; color: rgba(24,19,19,.76); font-family: var(--font-editorial),serif; font-size: .98rem; line-height: 1.8; }
 .letterClose { position: relative; margin: 25px 0 0; font-family: var(--font-editorial),serif; font-size: 1.08rem; font-weight: 700; line-height: 1.7; }
 .signature { position: relative; margin: 25px 0 0 12px; color: var(--red-deep); font-family: var(--font-journal),cursive; font-size: 2.1rem; line-height: .92; transform: rotate(-3deg); }
+.rainyDaySticker { position: absolute; right: 26px; bottom: 34px; z-index: 3; display: flex; align-items: center; gap: 7px; width: 138px; padding: 8px 10px; color: #36555e; background: rgba(194,224,232,.84); border: 1px solid rgba(24,19,19,.13); box-shadow: 3px 4px 0 rgba(24,19,19,.09); transform: rotate(2.5deg); }
+.rainyDaySticker span { flex: 0 0 auto; font-size: 1.45rem; line-height: 1; }
+.rainyDaySticker small { font-family: var(--font-journal),cursive; font-size: .82rem; line-height: .95; }
 
 .closing { position: relative; min-height: 650px; padding: 135px clamp(42px,10vw,130px) 110px; color: var(--paper); background: var(--red-deep); overflow: hidden; }
 .closingTab { position: absolute; top: 0; left: 7%; padding: 10px 17px; color: var(--ink); background: #fff0a8; box-shadow: 4px 4px 0 var(--ink); font-size: .61rem; font-weight: 900; letter-spacing: .15em; transform: translateY(-45%) rotate(-2deg); }
@@ -218,6 +221,9 @@
   .letter { padding: 50px 30px 44px; }
   .letter h2 { font-size: 4rem; }
   .letter > p:not(.eyebrow):not(.signature):not(.letterClose) { font-size: .94rem; }
+  .rainyDaySticker { right: 19px; bottom: 30px; width: 124px; padding: 7px 8px; }
+  .rainyDaySticker span { font-size: 1.25rem; }
+  .rainyDaySticker small { font-size: .72rem; }
   .closing { min-height: 720px; padding: 110px 22px 270px; }
   .closingLamby { right: 22px; bottom: 50px; width: 180px; }
   .doubleHappiness { right: 43%; bottom: 50px; font-size: 8rem; }
