@@ -5,7 +5,7 @@ import { publicNavigation } from "@/lib/site";
 import styles from "./page.module.css";
 
 const WEDDING_FEATURE =
-  "https://www.dropbox.com/scl/fi/xhpfaru3asmijfpldubcu/5.-IPPOLITE-Wedding-FEATURE.mov?rlkey=ipzfkdeqt7m3xc87v833m1i8j&dl=1";
+  "https://dl.dropboxusercontent.com/scl/fi/xhpfaru3asmijfpldubcu/5.-IPPOLITE-Wedding-FEATURE.mov?rlkey=ipzfkdeqt7m3xc87v833m1i8j&raw=1";
 
 const COLE_SPEECH =
   "https://www.dropbox.com/scl/fi/ivvgiyrdz8eod756cd3n3/Cole-Speech.mov?rlkey=up5lt41246ul8q8gz47xcqnus&raw=1";
@@ -184,7 +184,7 @@ export default function WeddingDayPage() {
               fill
               sizes="(max-width: 760px) 62vw, 26vw"
             />
-            <figcaption>Cris, Uncle Ed & family · before the vows</figcaption>
+            <figcaption>Cris, Uncle Ed & Cole · before the vows</figcaption>
           </figure>
         </div>
       </section>

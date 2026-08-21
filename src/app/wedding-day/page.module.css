@@ -107,7 +107,7 @@
 .lambeauPhoto figcaption { position:absolute; right:15px; bottom:11px; left:15px; z-index:2; font-family:var(--font-journal),cursive; font-size:1.08rem; text-align:center; }
 .ringsInset { right:18px; bottom:25px; z-index:5; width:40%; height:205px; padding:8px 8px 38px; transform:rotate(4deg); }
 .ringsInset img { object-fit:cover; padding:8px 8px 38px; }
-.proudLamby { right:-27px; bottom:-8px; width:155px; transform:rotate(4deg); }
+.proudLamby { top:45px; right:-27px; width:155px; transform:rotate(4deg); }
 .lambyCard { position:absolute; left:19px; top:18px; z-index:10; width:175px; padding:15px; background:#fff0a8; box-shadow:4px 5px 0 var(--red); transform:rotate(3deg); }
 .lambyCard span,.lambyCard strong { display:block; }
 .lambyCard span { color:var(--red-deep); font-size:.58rem; font-weight:900; letter-spacing:.12em; }
@@ -203,7 +203,7 @@
   .lambyStage { min-height:560px; }
   .lambeauPhoto { inset:48px 25px 75px 18px; }
   .ringsInset { right:8px; bottom:25px; width:43%; height:170px; }
-  .proudLamby { right:-12px; width:130px; }
+  .proudLamby { top:52px; right:-12px; width:130px; }
   .lambyCard { left:10px; top:18px; width:155px; }
 
   .filmSection { margin-bottom:95px; padding:78px 14px 55px; }
