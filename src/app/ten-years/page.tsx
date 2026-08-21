@@ -5,7 +5,7 @@ import { publicNavigation } from "@/lib/site";
 import styles from "./page.module.css";
 
 const ANNIVERSARY_FILM =
-  "https://www.dropbox.com/scl/fi/fhse588ian8qept745mbo/Shirley-and-Cris-Anniversary.mp4?rlkey=7ipqntuc2xl4enpaagbpsb9x0&raw=1";
+  "https://dl.dropboxusercontent.com/scl/fi/fhse588ian8qept745mbo/Shirley-and-Cris-Anniversary.mp4?rlkey=7ipqntuc2xl4enpaagbpsb9x0&raw=1";
 
 export const metadata: Metadata = {
   title: "Ten Years",
