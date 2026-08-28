@@ -4,8 +4,7 @@ import Link from "next/link";
 import { publicNavigation } from "@/lib/site";
 import styles from "./page.module.css";
 
-const MEET_CUTE_FILM =
-  "https://dl.dropboxusercontent.com/scl/fi/02a4ytqogae5e68z9rbc7/Wedding-Moving-Picture-08272016.mov?rlkey=plksd5k1euqz595bprtaz4tcy&raw=1";
+const MEET_CUTE_FILM = "/media/video/meet-cute.mov";
 
 export const metadata: Metadata = {
   title: "Our Story",
