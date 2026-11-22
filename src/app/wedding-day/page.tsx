@@ -7,6 +7,7 @@ import styles from "./page.module.css";
 const WEDDING_FEATURE = "/media/video/wedding-feature.mov";
 
 const COLE_SPEECH = "/media/video/cole-speech.mov";
+const ANIMATED_COLE_SPEECH = "/media/video/cole-speech-animated-2026.mp4";
 
 const schedule = [
   { time: "8:50", suffix: "AM", title: "Off to Euro", note: "Shirley leaves the Iron Horse Hotel.", sticker: "let’s go!" },
@@ -315,29 +316,59 @@ export default function WeddingDayPage() {
           </figure>
         </div>
 
-        <section className={styles.speechFeature} aria-labelledby="cole-speech-title">
+        <section className={styles.speechFeature} id="cole-speech" aria-labelledby="cole-speech-title">
           <div className={styles.speechCopy}>
-            <span>THE TOAST EVERYONE REMEMBERED · 06:20</span>
+            <span>THE TOAST EVERYONE REMEMBERED · TWO WAYS TO WATCH</span>
             <h3 id="cole-speech-title">Cole’s best-man speech.</h3>
             <p>
               Brother, best man, and the one who brought the room down. The hit
-              speech now has the replay button it earned.
+              speech has an animated encore—watch the original toast, then see
+              it come to life in a whole new way.
             </p>
             <strong className={styles.handNote}>worth another round of applause ♡</strong>
           </div>
-          <div className={styles.speechVideo}>
-            <span className={`${styles.tape} ${styles.speechTape}`} aria-hidden="true" />
-            <video
-              controls
-              preload="metadata"
-              poster="/media/video/cole-speech-poster.jpg"
-              aria-label="Cole’s best-man speech"
-            >
-              <source src={COLE_SPEECH} type="video/quicktime" />
-              <source src={COLE_SPEECH} />
-              Your browser does not support embedded video. You can{" "}
-              <a href={COLE_SPEECH}>watch Cole’s speech here</a>.
-            </video>
+          <div className={styles.speechPair}>
+            <figure className={styles.speechCard} id="cole-original">
+              <div className={styles.speechVideo}>
+                <span className={`${styles.tape} ${styles.speechTape}`} aria-hidden="true" />
+                <video
+                  controls
+                  playsInline
+                  preload="metadata"
+                  poster="/media/video/cole-speech-poster.jpg"
+                  aria-label="Cole’s original best-man speech"
+                >
+                  <source src={COLE_SPEECH} type="video/quicktime" />
+                  <source src={COLE_SPEECH} />
+                  <a href={COLE_SPEECH}>Watch Cole’s original speech</a>.
+                </video>
+              </div>
+              <figcaption>
+                <h4>The original toast</h4>
+                <p>August 27, 2016 · 06:20</p>
+                <a href={COLE_SPEECH} target="_blank" rel="noreferrer">Open the original film ↗</a>
+              </figcaption>
+            </figure>
+            <figure className={`${styles.speechCard} ${styles.animatedSpeechCard}`} id="cole-animation">
+              <div className={styles.speechVideo}>
+                <span className={`${styles.tape} ${styles.speechTape} ${styles.animatedSpeechTape}`} aria-hidden="true" />
+                <video
+                  controls
+                  playsInline
+                  preload="metadata"
+                  poster="/media/video/cole-speech-animated-2026-poster.jpg"
+                  aria-label="Cole’s animated best-man speech"
+                >
+                  <source src={ANIMATED_COLE_SPEECH} type="video/mp4" />
+                  <a href={ANIMATED_COLE_SPEECH}>Watch Cole’s animated speech</a>.
+                </video>
+              </div>
+              <figcaption>
+                <h4>The animated encore</h4>
+                <p>A little cartoon magic · 06:20</p>
+                <a href={ANIMATED_COLE_SPEECH} target="_blank" rel="noreferrer">Open the animated film ↗</a>
+              </figcaption>
+            </figure>
           </div>
         </section>
       </section>

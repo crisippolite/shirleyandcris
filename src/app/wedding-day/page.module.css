@@ -136,13 +136,23 @@
 .galleryTapeOne,.galleryTapeTwo { width:120px; height:29px; }
 .galleryTapeOne { top:0; left:20%; background:var(--jade); transform:translateY(-50%) rotate(-4deg); }
 .galleryTapeTwo { top:0; right:17%; background:var(--pink); transform:translateY(-50%) rotate(4deg); }
-.speechFeature { position:relative; z-index:5; display:grid; grid-template-columns:.72fr 1.28fr; gap:38px; align-items:center; margin:45px 5% 0; padding:38px; background:#fffdf8; border:2px solid var(--ink); box-shadow:8px 10px 0 var(--red); transform:rotate(-.5deg); }
+.speechFeature { position:relative; z-index:5; margin:45px 3% 0; padding:38px; background:#fffdf8; border:2px solid var(--ink); box-shadow:8px 10px 0 var(--red); }
+.speechCopy { max-width:680px; }
 .speechCopy > span { color:var(--red-deep); font-size:.63rem; font-weight:900; letter-spacing:.15em; }
 .speechCopy h3 { margin:13px 0; font-family:var(--font-editorial),serif; font-size:2.35rem; line-height:1.05; }
 .speechCopy p { margin:0; color:rgba(24,19,19,.68); line-height:1.7; }
-.speechVideo { position:relative; padding:8px; background:var(--ink); box-shadow:0 16px 35px rgba(45,27,24,.2); }
-.speechVideo video { display:block; width:100%; aspect-ratio:16/9; object-fit:cover; background:#0c0909; }
-.speechTape { top:-17px; left:35%; width:125px; height:27px; background:repeating-linear-gradient(45deg,var(--red) 0 8px,#fff 8px 12px); transform:rotate(-3deg); }
+.speechPair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:26px; margin-top:42px; }
+.speechCard { min-width:0; margin:0; padding:10px 10px 20px; background:white; border:1px solid var(--line-strong); box-shadow:3px 6px 0 rgba(24,19,19,.08); }
+.animatedSpeechCard { background:#fff8e5; }
+.speechVideo { position:relative; padding:6px; background:var(--ink); }
+.speechVideo video { display:block; width:100%; aspect-ratio:16/9; object-fit:contain; background:#0c0909; }
+.speechTape { pointer-events:none; top:0; left:50%; width:105px; height:25px; background:repeating-linear-gradient(45deg,var(--red) 0 8px,#fff 8px 12px); transform:translate(-50%,-50%) rotate(-3deg); }
+.animatedSpeechTape { background:radial-gradient(circle at 8px 8px,white 0 2px,transparent 2.5px),var(--jade); background-size:16px 16px; transform:translate(-50%,-50%) rotate(3deg); }
+.speechCard figcaption { padding:18px 10px 0; }
+.speechCard h4 { margin:0; color:var(--ink); font-family:var(--font-journal),cursive; font-size:1.8rem; font-weight:600; line-height:1.15; }
+.speechCard figcaption p { margin:8px 0 13px; color:rgba(24,19,19,.67); font-size:.78rem; line-height:1.55; }
+.speechCard figcaption a { display:inline-block; padding:8px 0; color:var(--red-deep); font-size:.76rem; font-weight:700; text-decoration:underline; text-underline-offset:4px; }
+.speechCard figcaption a:focus-visible { outline:2px solid var(--red); outline-offset:4px; }
 .handNote { display:block; margin-top:20px; color:var(--red-deep); font-family:var(--font-journal),cursive; font-size:1.45rem; font-weight:400; transform:rotate(-2deg); }
 
 .closing { display:grid; grid-template-columns:1.05fr .95fr; gap:75px; align-items:center; position:relative; padding:110px clamp(35px,7vw,95px) 100px; color:var(--paper); background:var(--ink); }
@@ -216,7 +226,8 @@
   .toastPhoto { top:350px; right:3%; width:65%; height:330px; }
   .laughPhoto { left:5%; bottom:270px; width:65%; height:360px; }
   .caricaturePhoto { right:4%; bottom:45px; width:62%; height:310px; }
-  .speechFeature { grid-template-columns:1fr; gap:28px; margin:35px 12px 0; padding:30px 25px; }
+  .speechFeature { margin:35px 6px 0; padding:30px 16px; }
+  .speechPair { grid-template-columns:1fr; gap:30px; margin-top:34px; }
 
   .closing { gap:35px; padding:90px 18px 70px; }
   .closingPhotos { min-height:min(125vw,620px); }
