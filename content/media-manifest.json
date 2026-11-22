@@ -26,6 +26,7 @@
     { "title": "Meet-Cute Ceremony Film", "role": "ceremony-origin-story", "source": "Wedding-Moving-Picture-08272016.mov", "transcript": "content/meet-cute-script.json", "poster": "public/media/video/meet-cute-poster.jpg" },
     { "title": "Wedding Feature", "role": "photographer-wedding-retrospective", "source": "5.-IPPOLITE-Wedding-FEATURE.mov", "poster": "public/media/photos/wedding-reflection.png" },
     { "title": "Cole’s Best-Man Speech", "role": "best-man-speech", "source": "Cole-Speech.mov", "poster": "public/media/video/cole-speech-poster.jpg", "duration_seconds": 380 },
+    { "title": "Cole’s Best-Man Speech - Animated", "role": "animated-best-man-speech", "source": "Cris and Cole - Best Man Speech (animated, 1080p).mp4", "source_share": "https://share.icloud.com/photos/057F4tIx1IDu9wlt9JAD-Mfdw", "derivative": "public/media/video/cole-speech-animated-2026.mp4", "poster": "public/media/video/cole-speech-animated-2026-poster.jpg", "duration_seconds": 380.395, "width": 1920, "height": 1080, "video_codec": "h264", "audio_codec": "aac", "size_bytes": 62793820 },
     { "title": "Ten-Year Anniversary", "role": "homepage-hero", "source": "Shirley-and-Cris-Anniversary.mp4" }
   ],
   "notes": [
