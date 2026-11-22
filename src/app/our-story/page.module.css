@@ -385,6 +385,10 @@
 .filmTapeLeft { left: 10%; transform: rotate(-4deg); }
 .filmTapeRight { right: 10%; transform: rotate(4deg); }
 .filmNote { margin: 25px 0 0; color: #ffd1d6; font-family: var(--font-journal), cursive; font-size: 1.35rem; text-align: center; }
+.animationSection { background: var(--ink); }
+.filmLinks { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 28px; margin-top: 22px; font-size: .85rem; }
+.filmLinks a { padding: 9px 0; text-decoration: underline; text-underline-offset: 5px; }
+.filmLinks a:focus-visible { outline: 2px solid var(--paper); outline-offset: 5px; }
 
 .yearsSection { padding: 0 20px 135px; }
 .yearsHeading { display: grid; grid-template-columns: 0.55fr 1.2fr 0.65fr; gap: 42px; align-items: start; margin-bottom: 60px; padding-top: 16px; border-top: 1px solid var(--line-strong); }

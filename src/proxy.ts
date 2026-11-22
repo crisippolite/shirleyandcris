@@ -47,5 +47,12 @@ export async function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/studio/:path*", "/auth/:path*", "/media/video/:path*"],
+  matcher: [
+    "/studio/:path*",
+    "/auth/:path*",
+    "/media/video/anniversary-film.mp4",
+    "/media/video/meet-cute.mov",
+    "/media/video/wedding-feature.mov",
+    "/media/video/cole-speech.mov",
+  ],
 };

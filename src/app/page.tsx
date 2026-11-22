@@ -9,10 +9,10 @@ const ANNIVERSARY_FILM =
 const films = [
   {
     number: "01",
-    eyebrow: "Before the vows",
+    eyebrow: "Our first hello",
     title: "How We Met",
-    note: "The meet-cute interview we played at the ceremony—our own little opening scene.",
-    href: "https://www.dropbox.com/scl/fi/02a4ytqogae5e68z9rbc7/Wedding-Moving-Picture-08272016.mov?rlkey=plksd5k1euqz595bprtaz4tcy&dl=0",
+    note: "Our opening scene, now animated—plus the original interview we played at our ceremony.",
+    href: "/our-story#meet-cute-animation",
   },
   {
     number: "02",
@@ -315,19 +315,24 @@ export default function HomePage() {
       <section className={styles.filmShelf} aria-labelledby="film-shelf-title">
         <SectionHeading
           label="The moving pictures"
-          title="Three films, one very long love story"
-          note="From the story we told our wedding guests, to the day itself, to this tenth-anniversary surprise."
+          title="Our films, one very long love story"
+          note="An animated first hello, the story we told our wedding guests, the day itself, and a tenth-anniversary surprise."
         />
         <div className={styles.filmCards}>
           {films.map((film) => (
-            <article className={styles.filmCard} key={film.number}>
+            <article className={`${styles.filmCard} ${film.number === "01" ? styles.meetCuteFilmCard : ""}`} key={film.number}>
               <span className={styles.filmNumber}>{film.number}</span>
               <p>{film.eyebrow}</p>
               <h3>{film.title}</h3>
               <span>{film.note}</span>
               <a href={film.href} target={film.href.startsWith("http") ? "_blank" : undefined} rel={film.href.startsWith("http") ? "noreferrer" : undefined}>
-                {film.number === "03" ? "Play above" : "Watch the film"} <span aria-hidden="true">↗</span>
+                {film.number === "01" ? "Watch the animation" : film.number === "03" ? "Play above" : "Watch the film"} <span aria-hidden="true">↗</span>
               </a>
+              {film.number === "01" && (
+                <a className={styles.originalFilmLink} href="/our-story#ceremony-film">
+                  Original wedding interview <span aria-hidden="true">↗</span>
+                </a>
+              )}
             </article>
           ))}
         </div>

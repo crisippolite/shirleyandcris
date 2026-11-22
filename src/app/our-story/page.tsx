@@ -5,6 +5,7 @@ import { publicNavigation } from "@/lib/site";
 import styles from "./page.module.css";
 
 const MEET_CUTE_FILM = "/media/video/meet-cute.mov";
+const ANIMATED_MEET_CUTE_FILM = "/media/video/meet-cute-animated-2026.mp4";
 
 export const metadata: Metadata = {
   title: "Our Story",
@@ -239,7 +240,42 @@ export default function OurStoryPage() {
         </div>
       </section>
 
-      <section className={styles.filmSection} aria-labelledby="film-title">
+      <section className={`${styles.filmSection} ${styles.animationSection}`} id="meet-cute-animation" aria-labelledby="animation-title">
+        <div className={`${styles.washi} ${styles.filmWashi}`} aria-hidden="true">
+          JUL 25, 1997 · OUR LITTLE OPENING SCENE · JUL 25, 1997
+        </div>
+        <div className={styles.filmHeading}>
+          <div>
+            <p className={styles.eyebrow}>Our meet-cute, animated · 01:16</p>
+            <h2 id="animation-title">The almost-hello, drawn to life.</h2>
+          </div>
+          <p>
+            The nerves, the missed hello, and the roses at work—our first chapter,
+            now with a little cartoon magic.
+          </p>
+        </div>
+        <div className={styles.filmFrame}>
+          <span className={`${styles.tape} ${styles.filmTapeLeft}`} aria-hidden="true" />
+          <span className={`${styles.tape} ${styles.filmTapeRight}`} aria-hidden="true" />
+          <video
+            controls
+            playsInline
+            preload="metadata"
+            poster="/media/video/meet-cute-animated-2026-poster.jpg"
+            aria-label="Shirley and Cris animated meet-cute story"
+          >
+            <source src={ANIMATED_MEET_CUTE_FILM} type="video/mp4" />
+            <a href={ANIMATED_MEET_CUTE_FILM}>Watch the animated meet-cute story</a>.
+          </video>
+        </div>
+        <p className={styles.filmNote}>same first hello · a new little way to tell it ♡</p>
+        <div className={styles.filmLinks}>
+          <a href={ANIMATED_MEET_CUTE_FILM} target="_blank" rel="noreferrer">Open the animation ↗</a>
+          <a href="#ceremony-film">Watch the original wedding interview ↓</a>
+        </div>
+      </section>
+
+      <section className={styles.filmSection} id="ceremony-film" aria-labelledby="film-title">
         <div className={`${styles.washi} ${styles.filmWashi}`} aria-hidden="true">
           FRI · JUL 25 · FRI · JUL 25 · FRI · JUL 25 · FRI · JUL 25
         </div>
@@ -258,6 +294,7 @@ export default function OurStoryPage() {
           <span className={`${styles.tape} ${styles.filmTapeRight}`} aria-hidden="true" />
           <video
             controls
+            playsInline
             preload="metadata"
             poster="/media/video/meet-cute-poster.jpg"
             aria-label="Shirley and Cris meet-cute ceremony film"
@@ -269,6 +306,9 @@ export default function OurStoryPage() {
           </video>
         </div>
         <p className={styles.filmNote}>Recorded before the wedding · played August 27, 2016</p>
+        <div className={styles.filmLinks}>
+          <a href="#meet-cute-animation">Watch the new animated version ↑</a>
+        </div>
       </section>
 
       <section className={styles.yearsSection} aria-labelledby="years-title">
