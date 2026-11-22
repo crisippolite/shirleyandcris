@@ -1,0 +1,3 @@
+# Keep local source downloads, sticker exports, and review artifacts off deployments.
+output/
+tmp/
